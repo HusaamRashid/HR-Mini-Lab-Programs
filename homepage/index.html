@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+    </head>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('#button').addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                        hi.innerHTML = 'Hello, ' + input.value + '!'
+                    })
+                })
+    </script>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Menu</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="/career.html">Career</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="/music.html">Music Taste</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="/hobbies.html">Hobbies</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        <div id="Index_Banner">
+        <h1>Welcome to my homepage!</h1><hr>
+        </div>
+        <div id="About">
+        <h3>About me</h3>
+        <p>My name is Husaam, I am currently in year 13 and hope to go to university next year. I like playing video games and used to enjoy much more before the pandemic. I hope to pick up more of my old hobbies soon especially when I have finished my exams this year.</p>
+        <p>Althought I am currently studying in school I am also pursuing many other things outside of school such as completing CS50, developing my interest in Cybersecurity which is a career I hope to go into in the future and much more. For example, I am creating a dropshipping store and hope to turn it into my own fashion social media platform once I improve my programming skills. <br>
+        My interest in fashion has led me to do this as I want to be able to share this interest with others, I hope to make it easier for people to find affordable clothes that they can put together to look good and also hope to help people find good outfits altogether by allowing people to shop by outfits and more.</p>
+        <p>I am also creating an app to help people recycle as a part of my Computer Science A-level NEA. I am passioante about the environment and creating a better tomorrow so I hope my app will help others who also care and want to make a change easily.</p>
+        </div>
+        <br>
+        <h5>Who am I?</h5>
+        <img src="sketch_me.png" alt="a sketch of me" width="300" height="250">
+        <div class="section">
+            <h5>What's your name?</h5>
+            <input type="text">
+            <button id="button">Say hello!</button>
+            <p id="hi"></p>
+        </div>
+    </body>
+</html>

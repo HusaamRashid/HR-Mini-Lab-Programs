@@ -1,0 +1,157 @@
+body {
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 15px;
+  }
+
+#Index_Banner{
+    background: linear-gradient(129deg, #2193B0 0%, #6DD5ED 47%);
+    font-family: Verdana;
+}
+
+#About{
+    border: 4px dashed #34343C;
+    background-color: #11F3D6;
+    box-shadow: 9px 7px 10px 1px #000;
+    letter-spacing: 2px;
+    overflow-wrap: break-word;
+    text-align: center;
+    font-family: Trebuchet MS;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
+
+#Career{
+    background: linear-gradient(180deg, #EACDA3 0%, #D6AE7B 100%);
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 20px;
+    padding-left: 5px;
+}
+
+#games{
+    text-align: center;
+    list-style-position: inside;
+}
+
+#hobby{
+    text-align: center;
+    background: -webkit-linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    background: linear-gradient(to right, #fdbb2d, #b21f1f, #1a2a6c);
+    text-shadow: 2px 4px 10px #000000;
+    font-family: verdana;
+    color: #FFFFFF;
+}
+
+/* Define a class for the container element that will hold the list of singers and songs */
+.favourites-container {
+    /* Set the width and height of the container element */
+    width: 800px;
+    height: 500px;
+
+    /* Set the background color and border of the container element */
+
+
+    /* Set the font family and size for the text inside the container element */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+    text-align:center;
+    background: linear-gradient(to right, #ffb347, #ffcc33);
+    animation: pulse 1s ease-in-out infinite;
+
+  }
+
+  /* Define a class for the list of favourite singers */
+  .favourite-singers {
+    /* Set the width and height of the list */
+    width: 300px;
+    height: 2000px;
+
+    /* Set the background color and border of the list */
+    background-color: #FFFFFF;
+
+
+    /* Set the padding and margin for the list */
+    padding: 20px;
+    margin: 0;
+
+    /* Set the list style type to none to remove the bullet points */
+    list-style-type: none;
+    width: 30%;
+    width: 1400px;
+    margin: auto;
+  }
+
+  /* Define a class for the list of favourite songs */
+  .favourite-songs {
+    /* Set the width and height of the list */
+    width: 500px;
+    height: 10000px;
+
+    /* Set the background color and border of the list */
+    background-color: #ffffff;
+
+    /* Set the padding and margin for the list */
+    padding: 20px;
+    margin: 0;
+
+    /* Set the list style type to none to remove the bullet points */
+    list-style-type: none;
+  }
+
+  /* Define a class for each list item in the favourite singers and songs lists */
+  .list-item {
+    /* Set the margin and padding for each list item */
+    margin: 10px 0;
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(90deg, #2FECA6 0%, #5346C1 87%);
+    font-family: verdana;
+    font-size: 14px
+
+    /* Set the border and border radius for each list item */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+
+  }
+
+
+
+
+blockquote{
+    text-align: center;
+}
+
+h3{
+    text-align:center;
+}
