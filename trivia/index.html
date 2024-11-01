@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            // Multiple Choice
+            document.addEventListener('DOMContentLoaded', function(){
+                let correct_button = document.querySelector('#correct');
+                let incorrect_button = document.querySelectorAll('.button');
+                let msg = document.querySelector('#msg');
+                let msg2 = document.querySelector('#msg2');
+                correct_button.addEventListener('click', function(){
+                    correct_button.style.backgroundColor = '#20DE2C';
+                    msg.innerHTML = 'Correct';
+                });
+                for (let i = 0; i < incorrect_button.length; i++)
+                {
+                    incorrect_button[i].addEventListener('click', function(){
+                        incorrect_button[i].style.backgroundColor = '#D93A18';
+                        msg.innerHTML = 'Incorrect';
+                    });
+                };
+                document.querySelector('#button').addEventListener('click', function(){
+                    let input = document.querySelector('input');
+                    if (input.value.toLowerCase() === 'venus')
+                    {
+                        input.style.backgroundColor = '#20DE2C';
+                        msg2.innerHTML = 'Correct'
+                    }
+                    else
+                    {
+                        input.style.backgroundColor = '#D93A18'
+                        msg2.innerHTML = 'Incorrect'
+                    }
+                })
+            })
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="area">
+            <h1>Trivia!</h1>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>How long is an Olympic sized swimming pool in meters?</h3>
+                <p id="msg"></p>
+                <button class="button">25 meters</button>
+                <button class="button">75 meters</button>
+                <button id="correct">50 meters</button>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is the hottest planet in our solar system?</h3>
+                <input type="text">
+                <button id="button">Check Answer</button>
+                <p id="msg2"></p>
+            </div>
+        </div>
+    </body>
+</html>
